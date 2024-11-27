@@ -1,0 +1,11 @@
+---
+- name: Create Raju User
+  hosts: all
+
+  tasks:
+  - name : Raju User
+    user:
+      name: Raju-Gupta
+      shell: /bin/bash
+      mode: 0777
+      

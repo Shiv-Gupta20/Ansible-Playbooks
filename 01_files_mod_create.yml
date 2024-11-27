@@ -1,0 +1,12 @@
+---
+- name: File modules
+  hosts: all
+
+  tasks:
+  - name: Create file to remote server
+    file:
+      path: /tmp/newmyfile.txt
+      state: touch
+      owner: centos-dev
+      group: centos-dev
+      mode: u=rwx,g=rw,o=r

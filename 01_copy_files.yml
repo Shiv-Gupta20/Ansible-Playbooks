@@ -1,0 +1,12 @@
+---
+- name: Copying the files to remote
+  hosts: all
+
+  tasks:
+  - name: Copy files
+    copy:
+      src: /root/myfile.txt
+      dest: /tmp/
+      owner: centos-dev
+      group: centos-dev
+      mode: ugo=rw

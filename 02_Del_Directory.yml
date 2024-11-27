@@ -1,0 +1,9 @@
+--- 
+- name: Delete directory to the Remote Server
+  hosts: all
+
+  tasks:
+  - name: Delete directory
+    file:
+      path: /tmp/MynewFolder1
+      state: absent

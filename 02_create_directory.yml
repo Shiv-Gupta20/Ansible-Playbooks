@@ -1,0 +1,13 @@
+---
+- name: Create Directory to Remote server
+  hosts: all
+
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /tmp/RajuGupta
+      state: directory
+      owner: centos-dev
+      group: centos-dev
+      mode: 0777

@@ -1,0 +1,8 @@
+---
+- name: Create the shell script
+  hosts: all
+
+
+  tasks:
+  - name: Execute the Shell Scripts
+    shell: /tmp/script/test.sh

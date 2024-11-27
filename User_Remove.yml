@@ -1,0 +1,12 @@
+---
+- name: Remove the User
+  hosts: all
+
+  tasks:
+  - name: Remove User
+    user:
+      name: Shiv_Gupta
+      shell: /bin/bash
+      groups: dev,QA,devops,admin
+      state: absent
+      remove: yes

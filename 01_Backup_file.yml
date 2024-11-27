@@ -1,0 +1,12 @@
+--- 
+- name: BackUP files
+  hosts: all
+
+  tasks: 
+  - name: BackUp Files 
+    copy:
+      src: /root/myfile1.txt
+      dest: /tmp/
+      owner: centos-dev
+      mode: 0777
+      backup: true

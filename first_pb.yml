@@ -1,0 +1,7 @@
+--- 
+- name: This first play app
+  hosts: all
+
+  tasks:
+  - name: Test Connectivity
+    ping: 

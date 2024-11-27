@@ -1,0 +1,13 @@
+---
+- name: Permission for Remote Server
+  hosts: all
+
+
+  tasks: 
+  - name: create files
+    file:
+      path: /tmp/kichaloo
+      state: directory
+      owner: centos-dev
+      group: centos-dev
+      mode: u=rwx,g=rw,o=r

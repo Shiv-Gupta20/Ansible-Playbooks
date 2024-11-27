@@ -1,0 +1,9 @@
+---
+- name: Delete thye file from the remote server
+  hosts: all
+
+  tasks:
+  - name: Delete the file
+    file:
+      path: /tmp/myfile1.txt
+      state: absent
